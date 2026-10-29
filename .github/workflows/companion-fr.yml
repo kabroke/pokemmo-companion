@@ -20,7 +20,7 @@ jobs:
           distribution: temurin
           java-version: '21'
       - name: Préparer le SDK Android
-        run: echo "SDK Android disponible"
+        uses: android-actions/setup-android@v4
       - name: Installer Android API 37
         run: |
           yes | sdkmanager --licenses >/dev/null || true
