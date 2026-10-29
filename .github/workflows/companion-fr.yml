@@ -24,7 +24,7 @@ jobs:
       - name: Installer Android API 37.0
         run: |
           yes | sdkmanager --licenses >/dev/null || true
-          sdkmanager 'platforms;android-37' 'build-tools;37.0.0' 'platform-tools'
+          sdkmanager 'platforms;android-37.0' 'build-tools;37.0.0' 'platform-tools'
       - name: Appliquer le correctif FR (inclus dans ce fichier)
         shell: bash
         run: |
